@@ -1,0 +1,48 @@
+@charset "utf-8";
+.content{
+	width:100%;
+	min-height:420px;
+	margin:15px -500px -20px -500px;
+	padding:50px 500px 0 500px;
+	background:#fff url(../images/bg12.jpg) no-repeat center top;
+	}
+.faq-box{
+	width:600px;
+	padding-bottom:20px;
+	margin:0 0 0 400px;
+	background:#fff;
+	opacity:0;
+	filter:alpha(opacity=0);}
+.faqh2{
+	width:100%;
+	height:60px;
+	padding-left:100px;
+	font:bold 30px/60px '微软雅黑';
+	color:#7df6b6;
+	background:url(../images/ban.jpg) no-repeat left top;
+	}
+.que-an{
+	width:100%;
+	height:auto;
+	margin-top:20px;
+	padding:15px 0;;
+	background:url(../images/bottom2.jpg) no-repeat left bottom;}
+.que{
+	width:580px;
+	padding-left:20px;
+	margin-top:10px;
+	background:url(../images/header12.jpg) no-repeat left top;
+	font:bold 17px/30px '微软雅黑';
+	color:#f4b13c;
+	}
+.an{
+	width:100%;
+	height:auto;
+	font:16px/25px '微软雅黑';
+	color:#999;
+	text-align:justify;
+	text-indent:2em;}
+
+
+/* CSS Document */
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="translation"
+  id="myeclipse.1397367010222"
+  context-root="/translation"
+  j2ee-spec="5.0"
+  archive="translation.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

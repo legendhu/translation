@@ -1,0 +1,1 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%><%@ taglib uri="/xinguan/captcha" prefix="zhw"%><zhw:captcha key="captcha"/>

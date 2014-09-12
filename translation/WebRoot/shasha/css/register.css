@@ -1,0 +1,171 @@
+/* CSS Document */
+.content{
+	margin:20px 0 0 0;
+	width:100%;
+	}
+.content .primary{
+	float:left;
+	width:960px;
+	padding:10px 20px;
+	border-radius:10px;
+	-moz-box-shadow:0 0 10px #CCCCCC;
+	-webkit-box-shadow:0 0 10px #CCCCCC;
+	-ms-box-shadow:0 0 10px #CCCCCC;
+	-o-box-shadow:0 0 10px #CCCCCC;
+	box-shadow:0 0 10px #CCCCCC;
+	background:#FFF;
+}
+
+.content .primary .welcome{
+	width:100%;
+	height:60px;
+	background:url(../images/register.png) no-repeat left top;
+	
+	}
+.students-choice,.teacher-choice{
+	float:left;
+	width:120px;
+	height:35px;
+	margin:25px 0 0 15px;
+	color:#fff;;
+	font:bold 18px/35px '微软雅黑';
+	text-align:center;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	cursor:pointer;
+	}
+.students-choice{
+	background:#fff;
+	color:#f7941f;
+	}
+#register-student{
+	margin-top:50px;
+	font-size:12px;
+	
+	}
+#register-student{
+	margin-top:50px;
+	font-size:12px;
+	}
+#register-teacher{
+	margin-top:50px;
+	font-size:12px;
+	display:none;
+}
+#register-teacher div,#register-student div{
+	margin:30px;
+	position:relative;}
+#register-teacher label,#register-student label{
+	float:left;
+	width:90px;
+	padding:0 0 0 20px;
+	font-size:18px;
+	color:#666;
+	line-height:30px;
+	}
+#register-teacher label.sex{
+	vertical-align:10px;
+	float:none;
+	}
+#register-teacher #men,#register-teacher #female{
+	width:15px;
+	border:none;
+	margin-left:20px;
+	}
+#register-teacher input,#register-teacher select,#register-student input,#register-student select{
+	border:1px solid #ccc;
+	background:#fff;
+	width:300px;
+	height:30px;
+	line-height:25px;
+	font-size:18px;
+	color:#666;
+	}
+#register-teacher p,#register-student p{
+	width:460px;
+	text-align:right;
+	color:#666;}
+span.info,span.error,span.succ{
+	position:absolute;
+	display:none;
+	}
+span.info{
+	background:url(../images/reg_info.png) no-repeat;
+	width:165px;
+	height:25px;
+	padding:7px 0 0 35px ;
+	}
+span.info_user{
+	background:url(../images/reg_info2.png) no-repeat;
+	color:#666;
+	height:43px;
+	line-height:18px;
+	top:0px;
+	left:415px;
+}
+span.user_wait{
+	background:url(../images/loading2.gif) no-repeat left top;
+	padding:10px;
+	position:absolute;
+	top:5px;
+	left:420px;
+	display:none;
+	}
+span.info_sure,span.info_ans,span.info_email,span.info_tel{
+	top:0px;
+	left:415px;
+	}
+span.error{
+	background:url(../images/reg_error.png) no-repeat;
+	width:165px;
+	height:25px;
+	padding:7px 0 0 35px ;
+	color:red;
+	}
+span.error_user,span.error_pass,span.error_sure,span.error_ans,span.error_email,span.error_tel,span.error_tw,span.error_bg,span.error_birth,span.error_repeat{
+	top:0px;
+	left:415px;
+	}
+span.succ{
+	background:url(../images/reg_succ.png) no-repeat;
+	padding:0 0 0 20px;
+	color:green;
+	line-height:14px;
+	}
+#register-teacher span.info_pass p,#register-student span.info_pass p{
+	padding:5px 0;
+	text-align:left;
+	letter-spacing:0px;
+	line-height:15px;}
+#register-teacher span.info_pass p .anquan,#register-student span.info_pass p .anquan{
+	color:#ccc;}
+span.info_pass{
+	background:url(../images/reg_info3.png) no-repeat;
+	width:244px;
+	height:102px;
+	top:-38px;
+	left:415px;
+	padding:4px 0 0 16px;}
+span.succ_user,span.succ_pass,span.succ_sure,span.succ_ans,span.succ_email,span.succ_tel{
+	top:10px;
+	left:420px;	
+	}
+.all_email{
+	width:280px;
+	background:#fff;
+	border:1px solid #ccc;
+	padding:5px 10px;
+	position:absolute;
+	top:32px;
+	left:110px;
+	z-index:1;
+	display:none;
+	
+	}
+.all_email li{
+	height:25px;
+	line-height:25px;
+	border-bottom:1px solid #E5EDF2;
+	padding:0 5px;
+	cursor:pointer;
+	}

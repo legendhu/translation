@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ 
+ 
+
+ <!--后台servlet-->
+  <servlet>
+    <servlet-name>DelFileServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.DelFileServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.UploadServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ClearAllServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ClearAllServlet</servlet-class>
+    <init-param>
+    	<param-name>path</param-name>
+    	<param-value>view/</param-value>
+    </init-param>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangeMessageServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeMessageServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangeAdminServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeAdminServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.AdminServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangeStudentServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeStudentServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangeAdvertServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeAdvertServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangeAdsServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeAdsServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangeTeacherServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeNewsServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeAboutServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeAboutServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>ChangeFaqServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ChangeFaqServlet</servlet-class>
+  </servlet>
+  
+ <!-- 后台servlet映射成页面 -->
+  <servlet>
+    <servlet-name>BackAboutFile</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackAboutFile</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>BackMessageServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackMessageServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>StInfoServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.StInfoServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>BackAdsServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackAdsServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ThInfoServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.ThInfoServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>BackTeacherServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BackStudentServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackStudentServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>BackFaqServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackFaqServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>BackAboutServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackAboutServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>FormServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.FormServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>BackNewsServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.backstage.BackNewsServlet</servlet-class>
+  </servlet>
+  
+  <!-- 前台servlet -->
+  <servlet>
+    <servlet-name>ListFileServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ListFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownFileServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.DownFileServlet</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>UserMessageServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.UserMessageServlet</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>UpdatePriceServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.UpdatePriceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ViewHeadServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ViewHeadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeCenterInfoServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ChangeCenterInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProPassServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ProPassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetQueServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.GetQueServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JudgeProServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.JudgeProServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProtectionServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ProtectionServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>AdsServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.AdsServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ChangePassServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ChangePassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JudgeServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.JudgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ThRegisterServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ThRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StRegisterServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.StRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AuthServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.AuthServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpLoadServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.UpLoadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ScoreServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ScoreServlet</servlet-class>
+  </servlet>
+  <!-- 前台servlet映射成页面 -->
+  <servlet>
+  	<servlet-name>FaqServlet</servlet-name>
+  	<servlet-class>com.xinguan.shasha.web.servlet.FaqServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ThCenteroServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ThCenterServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AboutServlet</servlet-name>
+  	<servlet-class>com.xinguan.shasha.web.servlet.AboutServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ShaShaIndexServlet</servlet-name>
+  	<servlet-class>com.xinguan.shasha.web.servlet.IndexServlet</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>StCenterServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.StCenterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowServlet</servlet-name>
+    <servlet-class>com.xinguan.shasha.web.servlet.ShowServlet</servlet-class>
+  </servlet>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- 后台servlet -->
+   <servlet-mapping>
+    <servlet-name>DelFileServlet</servlet-name>
+    <url-pattern>/admin/servlet/DelFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/admin/servlet/UploadServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ClearAllServlet</servlet-name>
+    <url-pattern>/admin/servlet/ClearAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeMessageServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeMessageServlet</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>ChangeAdminServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeAdminServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/servlet/AdminServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ChangeStudentServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeStudentServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ChangeAdvertServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeAdvertServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ChangeAdsServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeAdsServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ChangeTeacherServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeTeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeNewsServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeNewsServlet</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>ChangeAboutServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeAboutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeFaqServlet</servlet-name>
+    <url-pattern>/admin/servlet/ChangeFaqServlet</url-pattern>
+  </servlet-mapping>
+  
+ <!-- 后台servlet映射成页面 -->
+   <servlet-mapping>
+    <servlet-name>BackAboutFile</servlet-name>
+    <url-pattern>/shasha/backstage/file.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackMessageServlet</servlet-name>
+    <url-pattern>/shasha/backstage/message.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>StInfoServlet</servlet-name>
+    <url-pattern>/shasha/backstage/stinfo.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>BackAdsServlet</servlet-name>
+    <url-pattern>/shasha/backstage/ads.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ThInfoServlet</servlet-name>
+    <url-pattern>/shasha/backstage/thinfo.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackTeacherServlet</servlet-name>
+    <url-pattern>/shasha/backstage/teacher.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BackStudentServlet</servlet-name>
+    <url-pattern>/shasha/backstage/student.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>BackFaqServlet</servlet-name>
+    <url-pattern>/shasha/backstage/faq.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>BackAboutServlet</servlet-name>
+    <url-pattern>/shasha/backstage/about.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>FormServlet</servlet-name>
+    <url-pattern>/shasha/backstage/form.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>BackNewsServlet</servlet-name>
+    <url-pattern>/shasha/backstage/news.html</url-pattern>
+  </servlet-mapping>
+  
+ <!-- 前台Servlet -->
+   <servlet-mapping>
+    <servlet-name>ListFileServlet</servlet-name>
+    <url-pattern>/shasha/listallfile.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownFileServlet</servlet-name>
+    <url-pattern>/servlet/DownFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserMessageServlet</servlet-name>
+    <url-pattern>/front/servlet/UserMessageServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>UpdatePriceServlet</servlet-name>
+    <url-pattern>/front/servlet/UpdatePriceServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ViewHeadServlet</servlet-name>
+    <url-pattern>/front/servlet/ViewHeadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeCenterInfoServlet</servlet-name>
+    <url-pattern>/front/servlet/ChangeCenterInfoServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ProPassServlet</servlet-name>
+    <url-pattern>/front/servlet/ProPassServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>GetQueServlet</servlet-name>
+    <url-pattern>/servlet/GetQueServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JudgeProServlet</servlet-name>
+    <url-pattern>/escape/servlet/JudgeProServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ProtectionServlet</servlet-name>
+    <url-pattern>/escape/servlet/ProtectionServlet</url-pattern>
+  </servlet-mapping>
+ <servlet-mapping>
+    <servlet-name>AdsServlet</servlet-name>
+    <url-pattern>/front/servlet/AdsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePassServlet</servlet-name>
+    <url-pattern>/escape/servlet/ChangePassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JudgeServlet</servlet-name>
+    <url-pattern>/escape/servlet/JudgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ThRegisterServlet</servlet-name>
+    <url-pattern>/escape/servlet/ThRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StRegisterServlet</servlet-name>
+    <url-pattern>/escape/servlet/StRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuthServlet</servlet-name>
+    <url-pattern>/escape/servlet/AuthServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpLoadServlet</servlet-name>
+    <url-pattern>/front/servlet/UpLoadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <url-pattern>/servlet/LoginOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ScoreServlet</servlet-name>
+    <url-pattern>/servlet/ScoreServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 前台servlet映射成页面 -->
+  <servlet-mapping>
+  	<servlet-name>FaqServlet</servlet-name>
+  	<url-pattern>/shasha/faq.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/shasha/news.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ThCenteroServlet</servlet-name>
+    <url-pattern>/shasha/teacherCenter.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AboutServlet</servlet-name>
+  	<url-pattern>/shasha/aboutus.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ShaShaIndexServlet</servlet-name>
+  	<url-pattern>/shasha/index.html</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>StCenterServlet</servlet-name>
+    <url-pattern>/shasha/studentCenter.html</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ShowServlet</servlet-name>
+    <url-pattern>/shasha/teacher.html</url-pattern>
+  </servlet-mapping>
+  
+  
+<!-- 前台jsp映射html -->
+<servlet>
+	<servlet-name>passPro</servlet-name>
+	<jsp-file>/shasha/passPro.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>passPro</servlet-name>
+	<url-pattern>/shasha/passpro.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>getque</servlet-name>
+	<jsp-file>/shasha/getque.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>getque</servlet-name>
+	<url-pattern>/shasha/getque.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>register</servlet-name>
+	<jsp-file>/shasha/register.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>register</servlet-name>
+	<url-pattern>/shasha/register.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>intermediary</servlet-name>
+	<jsp-file>/shasha/intermediary.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>intermediary</servlet-name>
+	<url-pattern>/shasha/intermediary.html</url-pattern>
+</servlet-mapping>
+
+
+<!-- 后台jsp映射html -->
+<servlet>
+	<servlet-name>login</servlet-name>
+	<jsp-file>/shasha/login.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>login</servlet-name>
+	<url-pattern>/shasha/login.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>advert</servlet-name>
+	<jsp-file>/shasha/backstage/advert.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>advert</servlet-name>
+	<url-pattern>/shasha/backstage/advert.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>pass</servlet-name>
+	<jsp-file>/shasha/backstage/pass.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>pass</servlet-name>
+	<url-pattern>/shasha/backstage/pass.html</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>warning</servlet-name>
+	<jsp-file>/shasha/warning.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+	<servlet-name>warning</servlet-name>
+	<url-pattern>/shasha/warning.html</url-pattern>
+</servlet-mapping>
+
+
+<!-- 拦截器 -->
+	<filter>
+		<filter-name>AuthFilter</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.AuthFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>AdminFilter</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.AdminFilter</filter-class>
+	</filter>
+	
+	<filter>
+		<filter-name>Character</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.Character</filter-class>
+		<init-param>
+			<param-name>character</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>Cache</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.Cache</filter-class>
+	</filter>
+	<filter>
+		<filter-name>Expires</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.Expires</filter-class>
+		<init-param>
+			<param-name>time</param-name>
+			<param-value>30</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>EscapeFilter</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.EscapeFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>GzipFilter</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.GzipFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>I18nFilter</filter-name>
+		<filter-class>com.xinguan.shasha.web.filter.I18nFilter</filter-class>
+	</filter>
+	
+
+	<filter-mapping>
+ 		<filter-name>AuthFilter</filter-name>
+ 		<url-pattern>/front/*</url-pattern>
+ 	</filter-mapping>
+ 	
+	<filter-mapping>
+ 		<filter-name>AdminFilter</filter-name>
+ 		<url-pattern>/admin/*</url-pattern>
+ 	</filter-mapping>
+ 	
+ 	<filter-mapping>
+ 		<filter-name>AdminFilter</filter-name>
+ 		<url-pattern>/shasha/backstage/*</url-pattern>
+ 	</filter-mapping>
+	
+	<filter-mapping>
+ 		<filter-name>Character</filter-name>
+ 		<url-pattern>/*</url-pattern>
+ 	</filter-mapping>
+ 	 
+ 	<filter-mapping>
+ 		<filter-name>Cache</filter-name>
+ 		<url-pattern>/servlet/*</url-pattern>
+ 	</filter-mapping>
+ 	<filter-mapping>
+ 		<filter-name>Cache</filter-name>
+ 		<url-pattern>*.jsp</url-pattern>
+ 	</filter-mapping>
+ 	
+ 	<filter-mapping>
+ 		<filter-name>Expires</filter-name>
+ 		<url-pattern>*.css</url-pattern>
+ 	</filter-mapping>
+ 	<filter-mapping>
+ 		<filter-name>Expires</filter-name>
+ 		<url-pattern>*.js</url-pattern>
+ 	</filter-mapping>
+ 	<filter-mapping>
+ 		<filter-name>Expires</filter-name>
+ 		<url-pattern>*.jpg</url-pattern>
+ 	</filter-mapping>
+ 	
+	<filter-mapping>
+ 		<filter-name>EscapeFilter</filter-name>
+ 		<url-pattern>/front/*</url-pattern>
+ 	</filter-mapping>
+ 	<filter-mapping>
+ 		<filter-name>EscapeFilter</filter-name>
+ 		<url-pattern>/escape/*</url-pattern>
+ 	</filter-mapping>
+ 	
+ 
+ 	<filter-mapping>
+ 		<filter-name>GzipFilter</filter-name>
+ 		<url-pattern>*.js</url-pattern>
+ 	</filter-mapping>
+ 	<filter-mapping>
+ 		<filter-name>GzipFilter</filter-name>
+ 		<url-pattern>*.css</url-pattern>
+ 	</filter-mapping>
+ 		
+ 	<filter-mapping>
+ 		<filter-name>I18nFilter</filter-name>
+ 		<url-pattern>*.html</url-pattern>
+ 	</filter-mapping>
+ 
+<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

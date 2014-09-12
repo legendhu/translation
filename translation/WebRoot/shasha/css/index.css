@@ -1,0 +1,66 @@
+/* CSS Document */
+
+.banner{
+	width:1000px;
+	height:400px;
+	background:#cae9d7 url(../images/banner.jpg) no-repeat 50% 50%;
+	padding:0 1000px;
+	margin:0 -1000px;
+	margin-bottom:-20px;
+	border-bottom:5px #f7941f solid;
+	position:relative;
+	
+}
+.banner_anniu1{
+	width:102px;
+	height:42px;
+	position:absolute;
+	top:108px;
+	left:1497px;
+	background:url(../images/anniu1.png) no-repeat left top;
+	padding:7px 0 0 8px;
+	}
+.banner_anniu2{
+	width:102px;
+	height:42px;
+	position:absolute;
+	top:108px;
+	left:1647px;
+	background:url(../images/anniu2.png) no-repeat left top;
+	padding:7px 0 0 8px;
+	}
+.banner_anniu1 a,.banner_anniu2 a{
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	}
+.user-number{
+	position:absolute;
+	top:30px;
+	left:1460px;
+	}
+.user-number dl{
+	float:left;
+	width:155px;
+	margin:0 0 0 10px;
+	}	
+.user-number dt a{
+	float:left;
+	width:30px;
+	height:30px;
+	margin-left:20px;
+	background:url(../images/manber.png) no-repeat 0 0;
+	}
+.user-number dt strong{
+	padding-left:20px;
+	font:bold 18px/30px '微软雅黑';
+	letter-spacing:5px;
+	color:#63df52;
+	
+	}	
+.user-number dd{
+	margin:10px 0 0 0;
+	font:bold 14px '微软雅黑';
+	color:#f4c582;
+	text-indent:40px;
+	}

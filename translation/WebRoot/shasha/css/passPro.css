@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* CSS Document */
+.content{
+	width:998px;
+	height:auto;
+	margin:30px auto 0 auto;
+	background:url(../images/passpro2.png) no-repeat center top;
+	padding:1px;
+}
+.xiugaimima{
+	width:700px;
+	height:auto;
+	margin:70px auto 70px auto;
+	background:#FFF;
+	border:1px solid #ccc;}
+.xiugaimima h2{
+	height:0px;
+	text-indent:-1500px;
+	}
+.xiugaimimaform{
+	font-size:12px;
+	margin-top:50px;}
+.xiugaimimaform div{
+	position:relative;
+	height:30px;
+	margin-bottom:20px;}
+.xiugaimimaform label{
+	float:left;
+	width:120px;
+	padding:0 0 0 20px;
+	font-size:18px;
+	color:#666;
+	line-height:30px;
+	text-align:right;}
+#yuashimima,#gaihoumima,#querengaihoumima{
+	border:1px solid #ccc;
+	background:#fff;
+	width:200px;
+	height:30px;
+	line-height:25px;
+	font-size:18px;
+	color:#666;
+	}
+.xiugaimimaform .queren-box{
+	margin:40px 0;
+	height:42px;
+	text-align:center;
+	width:470px;
+	}
+.queren-box .xiugaitijiao{
+	width:102px;
+	height:42px;
+	font:bold 18px/40px '微软雅黑';
+	color:#FFF;
+	border:none;
+	background:url(../images/anniu1.png) no-repeat left top;
+	cursor:pointer;
+	}
+.xiugaimima span.info,.xiugaimima span.error,.xiugaimima span.succ{
+	position:absolute;
+	display:none;
+	}
+.xiugaimima span.info{
+	background:url(../images/reg_info.png) no-repeat;
+	width:165px;
+	height:25px;
+	padding:7px 0 0 35px ;
+	}	
+.xiugaimima span.info_sure{
+	top:0px;
+	left:355px;
+	}	
+.xiugaimima span.error{
+	background:url(../images/reg_error.png) no-repeat;
+	width:165px;
+	height:25px;
+	padding:7px 0 0 35px ;
+	color:red;
+	}	
+.xiugaimima span.error_pass,.xiugaimima span.error_sure{
+	top:0px;
+	left:355px;
+	}	
+.xiugaimima span.succ{
+	background:url(../images/reg_succ.png) no-repeat;
+	padding:0 0 0 20px;
+	color:green;
+	line-height:14px;
+	}	
+.xiugaimima span.info_pass p{
+	padding:5px 0;
+	text-align:left;
+	letter-spacing:0px;
+	line-height:15px;}
+.xiugaimima span.info_pass p .anquan{
+	color:#ccc;}	
+.xiugaimima span.info_pass{
+	background:url(../images/reg_info3.png) no-repeat;
+	width:244px;
+	height:102px;
+	top:-38px;
+	left:355px;
+	padding:4px 0 0 16px;}	
+.xiugaimima span.succ_pass,.xiugaimima span.succ_sure{
+	top:10px;
+	left:360px;	
+	}	
+.xiugaimima .xiugai_wait{
+	display:none;
+	position:absolute;
+	left:320px;
+	top:265px;
+	width:32px;
+	height:32px;
+	background:#FFF url(../images/loading.gif) no-repeat left top;
+	
+	}	

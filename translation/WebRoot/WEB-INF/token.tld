@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+	<description>JSTL 1.1 core library</description>
+	<display-name>JSTL core</display-name>
+	<tlib-version>1.1</tlib-version>
+	<short-name>c</short-name>
+	<uri>/token</uri>
+
+	 
+	<!-- 防止表单重复提交 -->
+	<tag>
+		<name>token</name>
+	  	<tag-class>com.xinguan.shasha.web.tags.Token</tag-class>
+	  	<body-content>empty</body-content>
+	  	<attribute>
+	   		<name>key</name>
+	   		<required>true</required>
+	   		<rtexprvalue>true</rtexprvalue>
+	  	</attribute>
+	</tag>
+
+ </taglib>

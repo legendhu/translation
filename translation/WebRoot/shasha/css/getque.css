@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+.content{
+	width:998px;
+	height:auto;
+	margin:30px auto 0 auto;
+	background:url(../images/psaapro1.png) no-repeat center top;
+	padding:1px;
+}
+.anserque{
+	width:600px;
+	height:auto;
+	margin:70px auto 70px auto;
+	background:#FFF;
+	border:1px solid #ccc;
+	padding:50px;
+	}
+.anserque .tishi{
+	font:18px/30px '微软雅黑';
+	margin-bottom:20px;
+	color:green;
+	text-align:center;}
+.anserque label{
+	float:left;
+	width:150px;
+	padding:0 0 0 20px;
+	font-size:18px;
+	color:#666;
+	line-height:30px;
+	text-align:right;}
+#zhaohui-user,#daan{
+	border:1px solid #ccc;
+	background:#fff;
+	width:250px;
+	height:30px;
+	line-height:25px;
+	font-size:18px;
+	color:#666;
+	}
+#huoquwenti,#next-step{
+	display:block;
+	width:102px;
+	height:42px;
+	margin:20px auto;
+	font:bold 18px/40px '微软雅黑';
+	color:#FFF;
+	border:none;
+	background:url(../images/anniu1.png) no-repeat left top;
+	cursor:pointer;
+	}
+#que{
+	font:20px/30px '微软雅黑';
+	margin-bottom:20px;
+	color:#666;
+	text-align:center;
+	}
